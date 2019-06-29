@@ -1,0 +1,280 @@
+*{
+  box-sizing: border-box;
+}
+
+/*Recordar: cambiar fondo del header y el body*/
+
+header{
+  background-color:;
+  background-image: linear-gradient(#000816, transparent);
+  margin: 0 auto;
+  position: fixed;
+  width: 100%;
+  z-index: 20;
+  overflow: hidden;
+}
+
+/*Primero los ubicamos*/
+nav ul{
+  list-style-type: none;
+  width: 100%;
+}
+
+nav ul li{
+  float: left;
+  width: 15%;
+  text-align: center;
+}
+
+.dropdown .dropbtn{
+  background-color: transparent;
+  border:0;
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  font-size:1.2em;
+  text-align: center;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+  color: white;
+  letter-spacing: .15em;
+  font-weight: bold;
+}
+.dropdown-content{
+  display: none;
+}
+.dropdown:hover .dropdown-content{
+  display: block;
+  font-size: 0.8em;
+  background-color: 000816;
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+}
+
+/*Ahora adecuamos el tamaño del logo y la lupa*/
+nav ul li img.logo{
+  width: 55%;
+  height: 15vh;
+  margin-top:2%;
+}
+
+
+/*Separamos*/
+nav ul li.search{
+margin-left:10%;
+margin-right:5%;
+margin-top:1.5%;
+}
+nav ul li.text{
+  margin-top: 3%;
+}
+
+a{
+  text-decoration: none;
+  font-weight: bold;
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  font-size:1.2em;
+  text-align: center;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+  color: white;
+  background-color:#000816 ;
+  letter-spacing: .15em;
+}
+li.search form{
+  position: relative;
+}
+li.search form span input{
+  width: 35vh;
+  height: 6vh;
+  position: absolute;
+  left:10vh;
+  top:2vh;
+  background-color: rgba(8,15,40,.5);
+  border-radius: 2vh;
+  border: 1px solid #007aff;
+}
+li.search form span button{
+  position: absolute;
+  left: 38vh;
+  top:2.5vh;
+  background-color:transparent;
+  background-image: url("Imagenes/lupa.png");
+  width:10vh;
+  height: 5vh;
+  border: none;
+}
+
+/*UIKIT*/
+
+
+
+/*Estilo del carrusel*/
+
+div.container{
+  padding-top: 0vh;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+div.carousel-inner{
+  position: relative;
+}
+div.carousel-inner div.item img{
+  width: 100%;
+  height: 100vh;
+  filter: brightness(0.4);
+
+}
+div.carousel-caption{
+  position: absolute;
+  left: 5%;
+  top: 30%;
+  width: 50%;
+}
+
+div.carousel-caption h3{
+  margin: 0 auto;
+  width: 100%;
+  font-size: 4em;
+}
+div.carousel-caption p{
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1.2em;
+}
+div.carousel.slide ol.carousel-indicators{
+  width: 100%;
+  height: 10vh;
+  left: 0;
+  bottom: 0;
+  margin:0 auto;
+  background-image: linear-gradient(transparent, #000816);
+}
+
+
+/*div de swiper*/
+div.swiper-slide{
+  position:relative;
+  width:100%
+}
+div.swiper-slide img{
+  width:100%;
+  height: 95%;
+  margin-top:-5vh;
+}
+
+/*Pelis mas populares*/
+h2.home{
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  font-size:2em;
+  padding:1vh 2vh;
+  margin-top: 10vh;
+  text-align: center;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+  color: white;
+  background-color:#000816 ;
+  letter-spacing: .15em;
+}
+div.swiper-slide h3{
+  position: absolute;
+  bottom: 0vh;
+  width: 100%;
+  height: 7vh;
+  background-color: #000816;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  font-size:0.7em;
+  padding-top: 1vh;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+  letter-spacing: .10em;
+}
+
+/*footer*/
+footer{
+  background-color: #1b1825;
+  overflow:hidden;
+}
+footer img{
+  width: 12vh;
+  height: 10vh;
+  padding: 1vh;
+  padding-left: 2vh;
+  margin-top: 1vh;
+  float: left;
+}
+footer div.socialnetwork img{
+  width: 9.5vh;
+  height: 8.5vh;
+}
+footer article{
+  float: left;
+  padding: 0vh;
+  margin-left: 2vh;
+  color: grey;
+  text-align: center;
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  font-size:1em;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+  letter-spacing: .15em;
+}
+footer div.socialnetwork{
+  float: right;
+  padding: 1vh;
+  padding-right: 3vh;
+}
+
+/****** MEDIA QUERIES ******/
+@media only screen and (max-width: 425px) {
+  header nav ul li img.logo{
+    width: 100%;
+    height: 7vh;
+    margin-top: 0vh;
+}
+
+  header nav ul li a{
+    font-size: 1em;
+
+  }
+
+  .dropdown .dropbtn{
+    font-size: 1em;
+    margin-top: -1%;
+  }
+
+  li.search form span input {
+    width: 10vh;
+    height: 3vh;
+    position: absolute;
+    left: 1vh;
+    top: 0vh;
+}
+
+div.carousel-caption{
+  width: 90%;
+}
+
+div.carousel-caption h3 {
+  font-size: 1.5em;
+}
+
+div.carousel-caption p{
+  font-size: 1em;
+
+}
+
+div.carousel-inner div.item img {
+    height: 50vh;
+}
+
+h2.home{
+  font-size: 1.3em;
+  margin-top: 10%;
+}
+
+}

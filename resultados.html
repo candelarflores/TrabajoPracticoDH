@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="resultados.css">
+    <link rel="stylesheet" href="UIKIT/uikit.min.css">
+    <script src="UIKIT/uikit.min.js"></script>
+    <script src="UIKIT/uikit-icons.min.js"></script>
+    <script type="text/javascript" src="resultados.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav> <!--Barra de navegacion-->
+        <ul>
+          <li><a href="proyecto.html" class="header"><img src="Imagenes/logo.png" alt="logo" class="logo"></a></li>
+          <li class="text"><a href="proyecto.html" style="color:white;" class="header"> Inicio </a></li> <!--Recordar: poner el href de los a-->
+          <li class="text">
+            <div class="dropdown">
+              <button class="dropbtn">Géneros
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+
+              </div>
+            </div>
+          </li>
+          <li class="search" style="width:20%">
+            <form class="searchform" action="resultados.html" method="get">
+              <span class="Form-Icon">
+                <input type="search" name="buscador" placeholder="Buscar pelicula..." class="buscador" required>
+                <button type="submit" name="button">
+                  <img src="Imagenes/lupa.png" alt="lupa" style="width:9vh; height:5vh; margin-left:-2.8vh; margin-top:-0.5vh;">
+                </button>
+              </span>
+            </form>
+          </li>
+          <li class="text">
+            <div class="uk-container uk-container-large">
+					<a class="login" href="#modal-example" uk-toggle style="color:white;font-weight:bold">Login</a>
+					<div id="modal-example" uk-modal>
+					    <div class="uk-modal-dialog uk-modal-body" style="background-color: rgba(0, 0, 0, 0.8)">
+					        <h2 class="uk-modal-title" style="color:white; font-size:1.5em">Sign In</h2>
+
+									<form class="" action="index.html" method="post">
+										<div class="uk-inline">
+											<span class="uk-form-icon" uk-icon="icon: user"></span>
+											<input class="uk-input" type="text" name="user" value="" placeholder="Username" required>
+										</div>
+
+										<hr>
+
+                    <div class="uk-inline">
+											<span class="uk-form-icon" uk-icon="icon: lock"></span>
+											<input class="uk-input" type="email" name="mail" value="" placeholder="Email" required>
+										</div>
+
+                    <hr>
+
+                    <div class="uk-inline">
+                      <label for="generos" style="color:white;">Género</label>
+											<select class="" name="generos">
+                        <option value="F">Femenino</option>
+                        <option value="M">Masculino</option>
+                      </select>
+										</div>
+
+					        <!-- <p>Cuerpo del Modal... Notese que tanto el boton como el link pueden activar el mismo modal, siempre y cuando el "target" sea el correcto</p> -->
+					        <p class="uk-text-right">
+					            <!-- <button class="uk-button uk-button-default uk-modal-close" type="button">Close</button> -->
+					            <button class="uk-button uk-button-primary" type="submit">Submit</button>
+					        </p>
+								</form>
+
+					    </div>
+					</div>
+			</div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+
+    </div>
+
+    <!--Footer-->
+  <footer>
+    <img src="Imagenes/logotmdb.jpg" alt="tmdb">
+    <article class="">
+      <p class="footer">Alumno: Candela Rocio Flores</p>
+      <p class="footer">Profesor: Dario Susnisky</p>
+    </article>
+    <div class="socialnetwork">
+      <img src="Imagenes/facebook.png" alt="facebook">
+      <img src="Imagenes/twitter.png" alt="twitter">
+      <img src="Imagenes/pinterest.png" alt="pinterest">
+      <img src="Imagenes/instagram.png" alt="instagram">
+    </div>
+  </footer>
+
+  </body>
+</html>
